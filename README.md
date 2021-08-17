@@ -16,13 +16,10 @@ npm install fwt-internship-uikit
 import React, { Component } from 'react'
 
 import MyComponent from 'fwt-internship-uikit'
-import 'fwt-internship-uikit/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const Example = () => <MyComponent />
+
+export default Example;
 ```
 
 ## License
