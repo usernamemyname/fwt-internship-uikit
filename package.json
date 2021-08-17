@@ -1,7 +1,10 @@
 {
-  "name": "fwt-internship-ukit",
-  "version": "0.1.0",
+  "name": "fwt-internship-uikit",
+  "version": "1.0.1",
   "description": "FWT internship uikit",
+  "author": "FrameWork Team",
+  "license": "MIT",
+  "repository": "usernamemyname/fwt-internship-uikit",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -12,8 +15,7 @@
     "prepare": "yarn build",
     "prettier-watch": "onchange 'src/**/*' -- prettier --write {{changed}}",
     "start": "rollup -c -w && yarn prettier-watch",
-    "storybook": "start-storybook -p 6006 -s public",
-    "test": "npm run lint"
+    "storybook": "start-storybook -p 6006 -s public"
   },
   "keywords": [
     "react",
@@ -23,14 +25,7 @@
     "fwt",
     "internship"
   ],
-  "author": "FrameWork Team",
-  "license": "MIT",
-  "dependencies": {
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-knobs": "^6.3.0",
-    "@storybook/react": "^6.3.1",
-    "classnames": "^2.3.1"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -44,6 +39,9 @@
     "@storybook/addons": "^5.1.9",
     "@storybook/node-logger": "^6.3.1",
     "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-knobs": "^6.3.0",
+    "@storybook/react": "^6.3.1",
     "@svgr/rollup": "^4.3.1",
     "@types/date-fns": "^2.6.0",
     "@types/node-sass": "^4.11.2",
@@ -59,6 +57,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-eslint": "10.0.2",
     "babel-loader": "^8.0.6",
+    "classnames": "^2.3.1",
     "eslint": "^7.21.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
