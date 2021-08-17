@@ -4,8 +4,14 @@
   "description": "FWT internship uikit",
   "author": "FrameWork Team",
   "license": "MIT",
-  "repository": "usernamemyname/fwt-internship-uikit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usernamemyname/fwt-internship-uikit"
+  },
   "homepage": "https://github.com/usernamemyname/fwt-internship-uikit#readme",
+  "bugs": {
+    "url": "https://github.com/usernamemyname/fwt-internship-uikit/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
