@@ -5,6 +5,7 @@
   "author": "FrameWork Team",
   "license": "MIT",
   "repository": "usernamemyname/fwt-internship-uikit",
+  "homepage": "https://github.com/usernamemyname/fwt-internship-uikit#readme",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",

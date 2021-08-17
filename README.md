@@ -14,7 +14,6 @@ npm install fwt-internship-uikit
 
 ```tsx
 import React, { Component } from 'react'
-
 import MyComponent from 'fwt-internship-uikit'
 
 const Example = () => <MyComponent />
