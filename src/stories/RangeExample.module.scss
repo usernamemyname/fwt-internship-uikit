@@ -1,0 +1,26 @@
+.input {
+  width: 95px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #efefef;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  user-select: none;
+  &--dark {
+    background: #efefef;
+  }
+  ::placeholder {
+    color: #b3b3b3;
+  }
+}
+.separator {
+  width: 12px;
+  height: 1px;
+  background: black;
+  margin: 0 10px;
+  &--dark {
+    background: white;
+  }
+}

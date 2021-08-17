@@ -1,0 +1,116 @@
+{
+  "name": "fwt-internship-ukit",
+  "version": "0.1.0",
+  "description": "FWT internship uikit",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build-storybook": "build-storybook -s public",
+    "lint": "eslint src/**/* --ext .ts,.tsx --fix",
+    "prepare": "yarn build",
+    "prettier-watch": "onchange 'src/**/*' -- prettier --write {{changed}}",
+    "start": "rollup -c -w && yarn prettier-watch",
+    "storybook": "start-storybook -p 6006 -s public",
+    "test": "npm run lint"
+  },
+  "keywords": [
+    "react",
+    "uikit",
+    "ui",
+    "kit",
+    "fwt",
+    "internship"
+  ],
+  "author": "FrameWork Team",
+  "license": "MIT",
+  "dependencies": {
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-knobs": "^6.3.0",
+    "@storybook/react": "^6.3.1",
+    "classnames": "^2.3.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@react-theming/storybook-addon": "^1.1.1",
+    "@storybook/addon-essentials": "^6.3.1",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^6.3.1",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/node-logger": "^6.3.1",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@svgr/rollup": "^4.3.1",
+    "@types/date-fns": "^2.6.0",
+    "@types/node-sass": "^4.11.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/storybook-addon-jsx": "^7.0.1",
+    "@types/storybook__addon-info": "^5.2.4",
+    "@types/storybook__addon-knobs": "^5.2.1",
+    "@types/storybook__react": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-eslint": "10.0.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "lint-staged": "^9.1.0",
+    "node-sass": "^5.0.0",
+    "onchange": "6.0.0",
+    "prettier": "1.18.2",
+    "react": "^17.0.2",
+    "react-docgen-typescript": "^1.12.5",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "react-svg-loader": "^3.0.3",
+    "react-test-renderer": "^16.8.6",
+    "rollup": "^1.16.6",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-typescript2": "^0.22.0",
+    "rollup-plugin-url": "^2.2.2",
+    "typescript": "^4.1.2",
+    "webpack-blocks": "^2.1.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.{js,ts,tsx,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+.Arrow {
+  &__opened {
+    transform: rotate(180deg);
+    margin-top: 3px;
+    margin-bottom: 0;
+  }
+
+  &__dark {
+    fill: #555555;
+  }
+}

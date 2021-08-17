@@ -1,0 +1,21 @@
+.PaginationPageWithActive {
+  background: black;
+  color: white;
+  border-color: black;
+  &:hover {
+    cursor: auto;
+    background: black;
+    color: white;
+    border-color: black;
+  }
+  &--dark {
+    background: white;
+    color: black;
+    border-color: white;
+    &:hover {
+      background: white;
+      color: black;
+      border-color: white;
+    }
+  }
+}
