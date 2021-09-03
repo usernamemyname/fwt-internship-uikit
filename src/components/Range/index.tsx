@@ -40,6 +40,7 @@ const Range: FC<IRange> = ({ children, isDarkTheme, className, onClose }) => {
     <div
       ref={ref}
       className={cx(className, 'Range', {
+        'Range--open': isOpen,
         'Range--dark': isDarkTheme
       })}
       aria-hidden="true"
@@ -49,7 +50,8 @@ const Range: FC<IRange> = ({ children, isDarkTheme, className, onClose }) => {
       {isOpen && (
         <div
           className={cx('Range__сontainer', {
-            'Range__сontainer--open': isOpen
+            'Range__сontainer--open': isOpen,
+            'Range__сontainer--dark': isDarkTheme
           })}
           onClick={(e) => e.stopPropagation()}
           aria-hidden="true">

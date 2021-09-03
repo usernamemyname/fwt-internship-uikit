@@ -1,7 +1,9 @@
 import { FC, useRef, useState } from 'react';
+import SimpleBar from 'simplebar-react';
 import cn from 'classnames/bind';
 import useOutsideClick from '../../hooks/useOutsideClick';
 import Arrow from '../Arrow';
+import './SimpleBar.scss';
 import * as styles from './Select.module.scss';
 
 const cx = cn.bind(styles);
@@ -70,17 +72,19 @@ const Select: FC<ISelect> = ({
             'Select__optionContainer--open': isOpen,
             'Select__optionContainer--dark': isDarkTheme
           })}>
-          {options.map((option) => (
-            <li
-              onClick={() => onChange(option.name)}
-              className={cx('Select__option', {
-                'Select__option--dark': isDarkTheme
-              })}
-              key={option.id}
-              aria-hidden="true">
-              <p className={cx('Select__optionName')}>{option.name}</p>
-            </li>
-          ))}
+          <SimpleBar style={{ maxHeight: 'inherit' }}>
+            {options.map((option) => (
+              <li
+                onClick={() => onChange(option.name)}
+                className={cx('Select__option', {
+                  'Select__option--dark': isDarkTheme
+                })}
+                key={option.id}
+                aria-hidden="true">
+                <p className={cx('Select__optionName')}>{option.name}</p>
+              </li>
+            ))}
+          </SimpleBar>
         </ul>
       )}
     </div>

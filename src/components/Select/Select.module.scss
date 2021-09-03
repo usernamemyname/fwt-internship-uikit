@@ -11,6 +11,7 @@
   color: black;
   box-sizing: border-box;
   background: white;
+  cursor: pointer;
   &--open {
     border-radius: 8px 8px 0 0;
   }
@@ -42,9 +43,11 @@
     background: white;
     &--open {
       border-radius: 0 0 8px 8px;
+      max-height: 300px;
     }
     &--dark {
       box-shadow: 0px 0px 0px 1px white;
+      background: #464646;
     }
   }
   &__option {
@@ -54,14 +57,12 @@
     align-items: center;
     width: calc(100%);
     box-sizing: border-box;
-    background: white;
     padding: 0 15px;
     &:hover {
       background: black;
       color: white;
     }
     &--dark {
-      background: #464646;
       &:hover {
         background: white;
         color: black;
@@ -76,12 +77,9 @@
   }
   &__arrow {
     position: absolute;
-    display: block;
-    transform: rotate(0deg);
-    right: 10px;
-    top: 10px;
+    display: flex;
+    right: 18px;
     float: right;
-    margin-bottom: 3px;
     fill: #b3b3b3;
   }
 }
